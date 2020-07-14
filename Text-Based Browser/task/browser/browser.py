@@ -1,3 +1,6 @@
+import os
+import sys
+
 
 nytimes_com = '''
 This New Liquid Is Magnetic, and Mesmerizing
@@ -12,7 +15,6 @@ Most Wikipedia Profiles Are of Men. This Scientist Is Changing That.
 Jessica Wade has added nearly 700 Wikipedia biographies for
 important female and minority scientists in less than two 
 years.
-
 '''
 
 bloomberg_com = '''
@@ -34,9 +36,30 @@ addressed Apple Inc. employees at the iPhone maker’s headquarters
 Tuesday, a signal of the strong ties between the Silicon Valley giants.
 '''
 
-# write your code here
-while True:
-    url = input()
-    if url == 'exit':
-        exit(0)
-    print(globals().get(url.replace('.','_')))
+
+class TextBasedBrowser:
+
+    def __init__(self):
+        self.file_name = ''
+        self.directory = ''
+
+    def read_arguments(self):
+        args = sys.argv
+        self.directory = args[1]
+
+    def determine_file_name(self, file):
+        index = file.rfind('.')
+        return None if index == -1 else file[:index]
+
+    def run(self):
+        self.read_arguments()
+        print(self.directory)
+        # while True:
+        #     url = input()
+        #     if url == 'exit':
+        #         exit(0)
+        #     print(globals().get(url))
+
+
+text_based_browser = TextBasedBrowser()
+text_based_browser.run()
