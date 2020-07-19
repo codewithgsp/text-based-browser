@@ -1,0 +1,11 @@
+type: code
+files:
+- name: task.py
+  visible: true
+  text: |-
+    def find_last(text, pattern):
+        pass
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/7574
+status: Unchecked
+record: -1
