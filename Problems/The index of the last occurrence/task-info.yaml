@@ -7,5 +7,9 @@ files:
         pass
   learner_created: false
 feedback_link: https://hyperskill.org/learn/step/7574
-status: Unchecked
+status: Solved
+feedback:
+  message: <html>Correct solution<br/><br/>Continue on <a href="https://hyperskill.org/learn/step/7574">JetBrains
+    Academy</a></html>
+  time: Sun, 19 Jul 2020 09:21:31 UTC
 record: -1
