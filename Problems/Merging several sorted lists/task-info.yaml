@@ -1,0 +1,12 @@
+type: code
+files:
+- name: task.py
+  visible: true
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/7711
+status: Failed
+feedback:
+  message: |
+    Failed test #3 of 6. Wrong answer
+  time: Sun, 19 Jul 2020 20:03:41 UTC
+record: -1
